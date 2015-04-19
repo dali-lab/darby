@@ -1,0 +1,31 @@
+#sidenav{
+	position: fixed;
+	height: 100%;
+	width: 20%;
+	right: 10px;
+}
+
+.sidenav-item{
+	height: 20%;
+	width: 100%;
+	background-color: grey;
+	margin: 5px;
+}
+
+.make-bigger{
+	-ms-transform: scale(1,2); /* IE 9 */
+    -webkit-transform: scale(1,2); /* Safari */
+    transform: scale(1,2);
+}
+
+.make-smaller{
+	-ms-transform: scale(1,0.5); /* IE 9 */
+    -webkit-transform: scale(1,0.5); /* Safari */
+    transform: scale(1,0.5);
+}
+
+.restore{
+	-ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(0,0); /* Safari */
+    transform: scale(0,0);
+}
