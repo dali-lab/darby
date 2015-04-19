@@ -14,11 +14,11 @@ $( ".sidenav-item" ).hover(function(){
 
         });
   }, function(){
-        $('.sidenav-item').animate({
-        	height: "20%"
-        }, 200, function(){
+        // $('.sidenav-item').animate({
+        // 	height: "20%"
+        // }, 200, function(){
 
-        });
+        // });
   }
  );
 
