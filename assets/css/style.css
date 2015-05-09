@@ -3,3 +3,28 @@
 	height: 125px;
 	background-image: url("assets/img/Pine_Boards_01.jpg");
 }
+
+.navbar .nav {
+    float: none;
+    text-align: center;
+}
+
+.navbar .nav li{
+	width: 20%;
+	display: inline-block;
+	float: none;
+
+}
+
+.navbar-inner{
+	background-image: url("navbar.jpg");
+	background-repeat: repeat-x;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover
+.navbar-nav > li > a:hover
+ {
+	opacity: .75;
+}
