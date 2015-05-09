@@ -1,2 +1,0 @@
-# darby
-Darby Doomsday project
