@@ -3,13 +3,13 @@ $(document).ready(function(){
 
 $( ".sidenav-item" ).hover(function(){
   		$(this).animate({
-  			height: "40%"
+  			height: "15%"
   		}, 200, function(){
 
   		});
         // $(this).css("height", "40%");
         $('.sidenav-item').not(this).animate({
-        	height: "15%"
+        	height: "9%"
         }, 200, function(){
 
         });
