@@ -7,8 +7,14 @@
 
 
 
-  <script type="text/javascript" src="scripts/jquery-1.11.2.js"></script>
-  <script type="text/javascript" src="scripts/sidenav.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.popupoverlay.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+  $(function() {
+    $( "#dialog" ).dialog();
+  });
+  </script>
 
 </head>
 <body>
@@ -40,6 +46,24 @@
 </div>
 </nav>
 
+<div class="main">
+  <div id="map-container">
+    <div class="map-clickable basic_open" id="town-hall"></div>
+    <div id="my_popup" style="position: fixed; margin-top: 100px; margin-bottom: 100px background-color: black; height: 100px; width: 100px;"></div>
+    <img src="assets/images/darby-map.png" width="100%"/>
+</div>
+
+
+</div>
+<button id="opener">open the dialog</button>
+<div id="dialog" title="Dialog Title">I'm a dialog</div>
+ 
+<script>
+$( "#dialog" ).dialog({ autoOpen: false });
+$( "#opener" ).click(function() {
+  $( "#dialog" ).dialog( "open" );
+});
+</script>
 
 </body>
 </html>

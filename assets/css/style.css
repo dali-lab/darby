@@ -28,3 +28,24 @@
  {
 	opacity: .75;
 }
+
+
+#map-container{
+	width: 900px; margin: auto;
+}
+
+.map-clickable{
+	position: absolute;
+	/* background-color: black; */
+	border: 1px solid black;
+}
+
+#town-hall{
+		width: 73px;
+	
+		height: 48px;
+	
+		margin-top: 618px;
+	
+		margin-left: 367px;
+}
