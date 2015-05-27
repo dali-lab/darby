@@ -12,8 +12,8 @@
   <!--FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -41,12 +41,25 @@
       </div><!-- /.navbar-collapse -->
   </nav>
 
+<!--   Add an optional button to open the popup
+  <button class="my_popup_open"></button> -->
+
+  <!-- Add content to the popup -->
+  <div id="my_popup">
+
+    ...popup content... <br>THIS IS SOMETHING ABOUT DARBY!!!!<br>
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <img src="assets/images/Darby_map.png" alt="" usemap="#Map" />
       <map name="Map" id="Map">
-        <area alt="" title="Basketville Signs/Jordan Shacks" href="#" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
+        <area class="my_popup_open" alt="" title="Basketville Signs/Jordan Shacks" href="#" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
         <area alt="" title="Original Cooty's Cabin" href="#" shape="poly" coords="836,117,840,192,1038,183,1031,104,839,119" />
         <area alt="" title="Abare's Folly Mountain" href="#" shape="poly" coords="864,231,867,338,1170,320,1155,203,866,233" />
         <area alt="" title="Great Meadow Village" href="#" shape="poly" coords="642,254,654,385,750,376,735,239,643,255" />
@@ -68,28 +81,33 @@
         <area alt="" title="Turner Jordyn's Place" href="#" shape="poly" coords="423,1029,428,1133,545,1140,543,1034,425,1031" />
         <area alt="" title="Sandbank" href="#" shape="poly" coords="251,999,252,1086,353,1084,353,994,253,998" />
       </map>
-
-<!--       <img src="assets/images/Darby_map.png" alt="" class="img-responsive" alt="Responsive image" usemap="#Map" />
-      <map name="Darby Doomsday" id="Map">
-        <area alt="" title="Trust Lands 1" href="https://www.google.com" shape="poly" coords="323,1174,321,1216,443,1216,441,1176" />
-        <area alt="" title="Turner Jordyn Place" href="https://www.kathydong.com" shape="poly" coords="445,1024,419,1106,525,1160,555,1070,445,1026" />
-      </div>
-    </map> -->
   </div>
 
-  <br><br>
+<br><br>
 </div>
 
+<!-- Include jQuery Scalable Map -->
 <script src="assets/js/jquery.rwdImageMaps.js"></script>
 <script>
   $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
     
-    $('area').on('click', function() {
-      alert($(this).attr('alt') + ' clicked');
-    });
+    // $('area').on('click', function() {
+    //   alert($(this).attr('alt') + ' clicked');
+    // });
   });
  </script>
+
+<!-- Include jQuery Popup Overlay -->
+<script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
+<script>
+  $(document).ready(function() {
+
+    // Initialize the plugin
+    $('#my_popup').popup();
+
+  });
+</script>
 
 </body>
 </div><!-- /.container-fluid -->

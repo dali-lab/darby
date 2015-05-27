@@ -68,3 +68,26 @@ img[usemap] {
 	width: auto;
 }
 
+<<<<<<< HEAD
+=======
+
+#map-container{
+	width: 900px; margin: auto;
+}
+
+.map-clickable{
+	position: absolute;
+	/* background-color: black; */
+	border: 1px solid black;
+}
+
+#town-hall{
+		width: 73px;
+	
+		height: 48px;
+	
+		margin-top: 618px;
+	
+		margin-left: 367px;
+}
+>>>>>>> 9db377e0967123c81abcabf94f0431b125f1bafa
