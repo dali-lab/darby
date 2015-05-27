@@ -45,7 +45,7 @@
   <button class="my_popup_open"></button> -->
 
   <!-- Add content to the popup -->
-  <div id="my_popup">
+  <div id="my_popup" class="well">
 
     ...popup content... <br>THIS IS SOMETHING ABOUT DARBY!!!!<br>
 
@@ -59,7 +59,7 @@
     <div class="col-md-8">
       <img src="assets/images/Darby_map.png" alt="" usemap="#Map" />
       <map name="Map" id="Map">
-        <area class="my_popup_open" alt="" title="Basketville Signs/Jordan Shacks" href="#" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
+        <area class="my_popup_open" id="basketville" alt="" title="Basketville Signs/Jordan Shacks" href="#" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
         <area alt="" title="Original Cooty's Cabin" href="#" shape="poly" coords="836,117,840,192,1038,183,1031,104,839,119" />
         <area alt="" title="Abare's Folly Mountain" href="#" shape="poly" coords="864,231,867,338,1170,320,1155,203,866,233" />
         <area alt="" title="Great Meadow Village" href="#" shape="poly" coords="642,254,654,385,750,376,735,239,643,255" />
@@ -95,17 +95,36 @@
     // $('area').on('click', function() {
     //   alert($(this).attr('alt') + ' clicked');
     // });
-  });
- </script>
+});
+  </script>
 
-<!-- Include jQuery Popup Overlay -->
-<script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
-<script>
+  <!-- Include jQuery Popup Overlay -->
+  <script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
+  <script>
   $(document).ready(function() {
 
     // Initialize the plugin
-    $('#my_popup').popup();
+    $('#my_popup').popup({
+      onopen: function(){
+          $('body').prepend('<div id="overlay"></div>');
+      },
+      onclose: function(){
+         $('#overlay').remove();
+      },
 
+      tooltipanchor: $('.my_popup_open'),
+      type: 'tooltip',
+      offsettop: 220,
+      offsetleft: 310,
+      background: false,
+      backgroundactive: false,
+      scrolllock: true
+    });
+
+    $( ".my_popup_open" ).click(function() {
+
+  console.log("hello");
+});
   });
 </script>
 
