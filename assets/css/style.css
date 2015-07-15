@@ -1,5 +1,6 @@
 body {
 	background-color: #f2eadd;
+	height: 100%;
 }
 
 #overlay {
@@ -23,21 +24,20 @@ a:hover {
 
 .header-img { 
 	width: 100vw;
-	height: 200px;
+	height: 80px;
 	background-image: url("assets/img/Pine_Boards_01.jpg");
 }
 
 .navbar .nav {
     float: none;
     text-align: center;
-    min-height: 100px;
+    min-height: 80px;
 }
 
 .navbar .nav li{
 	width: 20%;
 	display: inline-block;
 	float: none;
-
 }
 
 .navbar-inner{
@@ -47,16 +47,19 @@ a:hover {
 
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus {
+	color: #EAE4CD;
 	opacity: 1.0;
 	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
+	color: white;
 	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
 	font-family: 'Amatic SC';
+	padding-top: 30px;
 	font-size: 50px;
  	color: #EAE4CD;
 }
