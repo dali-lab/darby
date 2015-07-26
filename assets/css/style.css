@@ -1,11 +1,16 @@
 html, body {
-	margin: 0;
-	min-height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #FAEBBC;
+    text-align: center;
 }
 
 body {
-	position: relative;
-	background-color: #f2eadd;
+    padding-top: 65px;
 }
 
 #overlay {
@@ -18,32 +23,55 @@ body {
     height: 100%;
 }​
 
-/*a {
-	font-family: 'Amatic SC', cursive;
-	font-size: 150%;
-}*/
-
 a:hover { 
 	color: #FFFFFF;
 }
 
 .header-img { 
 	width: 100vw;
-	height: 200px;
+	height: 60px;
 	background-image: url("assets/img/Pine_Boards_01.jpg");
 }
 
+/* SECTION ID COLORS */
+#about {
+    background-color: #FAEBBC;
+    text-align: center;
+}
+
+#map { 
+    background-color: #F7F0DC;
+    text-align: center;
+}
+
+#books { 
+    background-color: #F7EDBF;
+    text-align: center;
+}
+
+/* MODAL CSS */
+.modal {
+    padding-top: 100px;
+}
+
+.modal-content{
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+/* NAVIGATION BAR CSS */
 .navbar .nav {
     float: none;
     text-align: center;
-    min-height: 100px;
+    min-height: 65px;
 }
 
 .navbar .nav li{
-	width: 20%;
+	width: 15%;
 	display: inline-block;
 	float: none;
-
 }
 
 .navbar-inner{
@@ -53,17 +81,20 @@ a:hover {
 
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus {
+	color: #EAE4CD;
 	opacity: 1.0;
 	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
+	color: white;
 	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
 	font-family: 'Amatic SC';
-	font-size: 50px;
+	padding-top: 20px;
+	font-size: 42px;
  	color: #EAE4CD;
 }
 
@@ -84,9 +115,6 @@ img[usemap] {
 	width: auto;
 }
 
-<<<<<<< HEAD
-=======
-
 #map-container{
 	width: 900px; margin: auto;
 }
@@ -96,16 +124,4 @@ img[usemap] {
 	/* background-color: black; */
 	border: 1px solid black;
 }
-
-#town-hall{
-		width: 73px;
-	
-		height: 48px;
-	
-		margin-top: 618px;
-	
-		margin-left: 367px;
-}
->>>>>>> 9db377e0967123c81abcabf94f0431b125f1bafa
-
 
