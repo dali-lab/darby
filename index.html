@@ -10,12 +10,18 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
   <!--FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -39,14 +45,14 @@
             <li class="active"><a href="#about">ABOUT<span class="sr-only">(current)</span></a></li>
             <li><a href="#map">MAP</a></li>
             <li><a href="#books">BOOKS</a></li>
-            <li><a href="#">GALLERY</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
             <li><a href="#">BLOG</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
 
     <section id = "about">
-      <br>
+      <br><br><br>
       <div class = "row">
         <div class = "col-md-12">
           <span style="font-family: Amatic SC; font-weight: 400; font-size: 60px; color: #9F3B2E"> ERNEST HEBERT'S GUIDE TO THE </span><br>
@@ -72,7 +78,7 @@
     </section>
 
     <section id = "map">
-      <br><br>
+      <br><br><br>
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -111,39 +117,68 @@
     </section> <!-- END MAP -->
 
     <section id = "books">
-      <br>
+      <br><br><br>
       <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> BOOKS </span>
-      <br>
+      <br><br>
       <div class = "row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <img class = "covers img-responsive" src = "assets/images/Books/Howard_Elmans_Farewell1.png" style = "width: 33%"/>
-          <img class = "covers img-responsive" src = "assets/images/Books/Live_Free_Or_Die.jpg" style = "width: 33%"/>
-          <img class = "covers img-responsive" src = "assets/images/Books/Old_American.jpg" style = "width: 33%"/>
+          <div class = "col-md-2"></div>
+          <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. Etiam lacinia dui ut sollicitudin rhoncus. Nunc convallis quam vitae tortor varius feugiat. Donec pellentesque convallis nisi at sodales. Cras non magna sem. Integer sit amet commodo leo. In sit amet justo tellus. Duis non nisi eget nunc rhoncus mollis. Vivamus pharetra purus in orci posuere, in pretium dui tristique.
+            </span>
+          </div>
         </div>
-      </div>
-      <div class = "row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <img class = "covers img-responsive" src = "assets/images/Books/Dogs_March.jpg" style = "width: 33%"/>
-          <img class = "covers img-responsive" src = "assets/images/Books/Passion_Estelle_Jordan.jpg" style = "width: 33%"/>
-          <img class = "covers img-responsive" src = "assets/images/Books/Spoonwood.jpg" style = "width: 33%"/>
-        </div>
-      </div><br>
+      <div class="books">
+        <div><a href="http://www.amazon.com/Dogs-March-Darby-Chronicles-Book-ebook/dp/B00MHT561K" target="_blank"><img src="assets/images/book1.jpg"></a><br><p>Caption here</p></div>
+        <div><a href="http://www.amazon.com/Little-More-Than-Darby-Chronicles/dp/1611686237" target="_blank"><img src="assets/images/book2.jpg"></a><br><p>Caption here</p></div>
+        <div><a href="http://www.amazon.com/Whisper-My-Name-Darby-Chronicles/dp/1611686253" target="_blank"><img src="assets/images/book3.jpg"></a><br><p>Caption here</p></div>
+        <div><a href="http://www.amazon.com/Passion-Estelle-Jordan-Darby-Chronicles/dp/161168627X" target="_blank"><img src="assets/images/book4.jpg"></a><br><p>Caption here</p></div>
+        <div><a href="http://www.amazon.com/Live-Free-Die-Darby-Chronicles/dp/1611687063" target="_blank"><img src="assets/images/book5.jpg"></a><br><p>Caption here</p></div>
+        <div><a href="http://www.amazon.com/Spoonwood-Darby-Chronicles-Ernest-Hebert/dp/1611686296" target="_blank"><img src="assets/images/book6.jpg"></a><br><p>Caption here</p></div>
+        <div><a href="http://www.amazon.com/Howard-Elmans-Farewell-Darby-Chronicles/dp/1611685419" target="_blank"><img src="assets/images/book7.jpg"></a><br><p>Caption here</p></div>
     </section>
 
     <section id = "gallery">
       <br>
       <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> GALLERY </span>
       <br>
-      <div class = "image_gallery">
-        <ul class = "row">
-          <div class = "col-lg-2 col-md-2 col-sm-3 col-xs-4"></div>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src = "assets/images/Books/Passion_Estelle_Jordan.jpg"/></li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src = "assets/images/Books/Dogs_March.jpg"/></li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src = "assets/images/Books/Spoonwood.jpg"/></li>
-          <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src = "assets/images/Books/Howard_Elmans_Farewell.jpg"/></li>
-        </ul>
+      <div class = "row">
+          <div class = "col-md-2"></div>
+          <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. Etiam lacinia dui ut sollicitudin rhoncus. Nunc convallis quam vitae tortor varius feugiat. Donec pellentesque convallis nisi at sodales. Cras non magna sem. Integer sit amet commodo leo. In sit amet justo tellus. Duis non nisi eget nunc rhoncus mollis. Vivamus pharetra purus in orci posuere, in pretium dui tristique.
+            </span>
+          </div>
+        </div>
+      <div class="gallery">
+        <div><img src="assets/images/Beech_tree_winter.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Bed_Footlocker.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_broom_14.09.11.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Cabin_15.03.31.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_cabin_Door_15.03.19.1_2.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Cabin_Door_15.04.05.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/cooty_cabin.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Night_Stand.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Stick_01.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Stick_02.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Stick_3.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Tools_14.12.02.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Window_West_weed_pots_03.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty's_Tiny_Table.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Estelle_wall_02.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Feet_Footlocker_15.02.14.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Howard_Elman's_Farewell.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Howard_Hat_14.07.28.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Jack_Brouse_Ernie_Hebert_1968.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Live_Free_or_Die.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Mallat-and-drawknife-03.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Old_American_14.09.11.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Perley_Swett_1968.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Spoonwood.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Sticks_15.02.03.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Streamer_Fly_hook.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/the_dogs_of_march.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/The_Passion_of_Estelle_Jordan.jpg"><br><p>Caption here</p></div>
       </div>
     </section>
 
@@ -182,12 +217,104 @@
       </div>
     </div>
 
+    <section id = "blog">
+      <br><br><br>
+      <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> BLOG </span>
+      <br><br>
+      <div class = "row">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8">
+          <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. <br><br>
+          </span>
+        </div>
+      </div>
+    </section>
+
     <!-- Include jQuery Scalable Map -->
     <script src="assets/js/jquery.rwdImageMaps.js"></script>
     <script>
+
       $(document).ready(function(e) {
         $('img[usemap]').rwdImageMaps();
       });
+
+      $(document).ready(function(){
+        $('.gallery').slick({
+          // slidesToShow : 3,
+          // slidesToScroll : 1,
+          infinite : true,
+          variableWidth: true,
+          speed : 350,
+          centerMode: true,
+          arrows: true,
+          dots: true,
+          initialSlide: 6,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });   
+
+      $(document).ready(function(){
+        $('.books').slick({
+          // slidesToShow : 3,
+          // slidesToScroll : 1,
+          infinite : true,
+          variableWidth: true,
+          speed : 350,
+          centerMode: false,
+          arrows: true,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
+        });
+      });     
     </script>
     <div><!--container fluid-->
   </body>
