@@ -13,6 +13,39 @@ body {
     padding-top: 65px;
 }
 
+/* GALLERY */
+ul {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+ul li {
+    list-style:none;
+    margin-bottom:25px;
+}
+
+ul li img {
+    cursor: pointer;
+    width: 100%;
+    -webkit-filter: grayscale(50%);
+}
+
+ul li img:hover{
+    -webkit-filter: none;
+}
+
+#howard {
+    background-image: url('Howard_Elmans_Farewell1.png');
+    width: 413px;
+    height: 643px;
+}
+
+#howard:hover {
+    background-image: url('Howard_Elmans_Farewell.png');
+    width: 413px;
+    height: 643px;
+}
+
 #overlay {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
@@ -25,6 +58,11 @@ body {
 
 a:hover { 
 	color: #FFFFFF;
+}
+
+.covers {
+    display: inline-block;
+    padding: 2%;
 }
 
 .header-img { 
@@ -49,6 +87,11 @@ a:hover {
     text-align: center;
 }
 
+#gallery {
+    background-color: #D2C5AA;
+    text-align: center;
+}
+
 /* MODAL CSS */
 .modal {
     padding-top: 100px;
@@ -65,7 +108,7 @@ a:hover {
 .navbar .nav {
     float: none;
     text-align: center;
-    min-height: 65px;
+    height: 65px;
 }
 
 .navbar .nav li{
@@ -101,12 +144,6 @@ a:hover {
 .navbar-default .navbar-nav>li>a:hover {
   color: #FFFFFF;
 }
-
-/*.navbar-nav > li > a:hover
- {
- 	color: white;
-	opacity: .75;
-}*/
 
 img[usemap] {
 	border: none;
