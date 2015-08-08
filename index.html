@@ -153,20 +153,21 @@
           </div>
         </div><br>
       <div class="gallery">
-        <div><img src="assets/images/Beech_tree_winter.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/Cooty_Bed_Footlocker.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/Cooty_broom_14.09.11.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/Cooty_Cabin_15.03.31.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_cabin_Door_15.03.19.1_2.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_Cabin_Door_15.04.05.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_broom_14.09.11.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Bed_Footlocker.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Beech_tree_winter.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Cabin_15.03.31.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty's_Tiny_Table.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Stick_3.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/cooty_cabin.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_Night_Stand.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Tools_14.12.02.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_Stick_01.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_Stick_02.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_Stick_3.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Cooty_Tools_14.12.02.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/Cooty_Window_West_weed_pots_03.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/Cooty's_Tiny_Table.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Estelle_wall_02.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Feet_Footlocker_15.02.14.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Howard_Elman's_Farewell.jpg"><br><p>Caption here</p></div>
@@ -176,6 +177,7 @@
         <div><img src="assets/images/Mallat-and-drawknife-03.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Old_American_14.09.11.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Perley_Swett_1968.jpg"><br><p>Caption here</p></div>
+        <div><img src="assets/images/Cooty_Window_West_weed_pots_03.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Spoonwood.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Sticks_15.02.03.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/Streamer_Fly_hook.jpg"><br><p>Caption here</p></div>
@@ -243,34 +245,40 @@
 
       $(document).ready(function(){
         $('.gallery').slick({
-          // slidesToShow : 3,
-          // slidesToScroll : 1,
-          infinite : true,
+          mobileFirst: true,
           variableWidth: true,
           speed : 350,
-          centerMode: true,
-          arrows: true,
+          centerMode: false,
           dots: true,
-          initialSlide: 6,
+          initialSlide: 0,
           responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1200,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
                 dots: true
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 800,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 200,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -283,15 +291,22 @@
       $(document).ready(function(){
         $('.books').slick({
           mobileFirst: true,
-          infinite : false,
           variableWidth: true,
           speed : 350,
           centerMode: false,
-          arrows: true,
           dots: true,
           responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1250,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 1000,
               settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -301,6 +316,13 @@
             },
             {
               breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 500,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
