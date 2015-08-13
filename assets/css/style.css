@@ -56,6 +56,10 @@ ul li img:hover{
     height: 100%;
 }​
 
+area { 
+    cursor: tooltip;
+}
+
 a:hover { 
 	color: #FFFFFF;
 }
@@ -90,6 +94,12 @@ a:hover {
 #gallery {
     background-color: #D2C5AA;
     text-align: center;
+}
+
+footer {
+    height:28px;
+    text-align: center;
+    background-image: url("../images/navbar.gif");
 }
 
 /* MODAL CSS */
