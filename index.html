@@ -7,21 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Darby Doomsday</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/lightbox/dist/css/lightbox.css" />
+
 
   <!--FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>
 
 </head>
 
@@ -88,7 +89,7 @@
           </span>
           <img src="assets/images/Darby-map2.png" alt="" usemap="#Map" />
           <map name="Map" id="Map">
-            <area type="button" id="basketville" title="Basketville Signs/Jordan Shacks" data-toggle="modal" data-target="#basketville_modal" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
+            <area id="basketville" title="Basketville Signs/Jordan Shacks" data-toggle="modal" data-target="#basketville_modal" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
 
             <area id="cooty" title="Cooty's Cabin" data-toggle="modal" data-target="#cooty_modal" shape="poly" coords="836,117,840,192,1038,183,1031,104,839,119" />
 
@@ -129,13 +130,15 @@
           </div>
         </div><br>
       <div class="books">
-        <div><a href="http://www.amazon.com/Dogs-March-Darby-Chronicles-Book-ebook/dp/B00MHT561K" target="_blank"><img src="assets/images/books/book1.jpg"></a><br><p>Caption here</p></div>
-        <div><a href="http://www.amazon.com/Little-More-Than-Darby-Chronicles/dp/1611686237" target="_blank"><img src="assets/images/books/book2.jpg"></a><br><p>Caption here</p></div>
-        <div><a href="http://www.amazon.com/Whisper-My-Name-Darby-Chronicles/dp/1611686253" target="_blank"><img src="assets/images/books/book3.jpg"></a><br><p>Caption here</p></div>
-        <div><a href="http://www.amazon.com/Passion-Estelle-Jordan-Darby-Chronicles/dp/161168627X" target="_blank"><img src="assets/images/books/book4.jpg"></a><br><p>Caption here</p></div>
-        <div><a href="http://www.amazon.com/Live-Free-Die-Darby-Chronicles/dp/1611687063" target="_blank"><img src="assets/images/books/book5.jpg"></a><br><p>Caption here</p></div>
-        <div><a href="http://www.amazon.com/Spoonwood-Darby-Chronicles-Ernest-Hebert/dp/1611686296" target="_blank"><img src="assets/images/books/book6.jpg"></a><br><p>Caption here</p></div>
-        <div><a href="http://www.amazon.com/Howard-Elmans-Farewell-Darby-Chronicles/dp/1611685419" target="_blank"><img src="assets/images/books/book7.jpg"></a><br><p>Caption here</p></div>
+        <!-- <div><a href="http://www.amazon.com/Dogs-March-Darby-Chronicles-Book-ebook/dp/B00MHT561K" target="_blank"><img src="assets/images/books/book1.jpg"></a><br><p class="book_cap">“His life had come to this: save a few deer from the jaws of dogs. He was a small man sent to perform a small task.”</p></div> -->
+        <div><a href="assets/images/books/book1.jpg" data-lightbox="image-1" data-title="My caption"><img src="assets/images/books/book1.jpg"/></a><br><p class="book_cap">“His life had come to this: save a few deer from the jaws of dogs. He was a small man sent to perform a small task.”</p></div>
+
+        <div><a href="http://www.amazon.com/Little-More-Than-Darby-Chronicles/dp/1611686237" target="_blank"><img src="assets/images/books/book2.jpg"></a><br><p class="book_cap">Ollie Jordan: “Everybody’s got an idiot chained to him, only difference is, mine’s here to see”</p></div>
+        <div><a href="http://www.amazon.com/Whisper-My-Name-Darby-Chronicles/dp/1611686253" target="_blank"><img src="assets/images/books/book3.jpg"></a><br><p class="book_cap">The stakes are high when a company proposes to build a regional shopping mall in Darby</p></div>
+        <div><a href="http://www.amazon.com/Passion-Estelle-Jordan-Darby-Chronicles/dp/161168627X" target="_blank"><img src="assets/images/books/book4.jpg"></a><br><p class="book_cap">Maybe the way to save yourself is to save someone else</p></div>
+        <div><a href="http://www.amazon.com/Live-Free-Die-Darby-Chronicles/dp/1611687063" target="_blank"><img src="assets/images/books/book5.jpg"></a><br><p class="book_cap">Long drop, no net, when the trash man’s son and the squire’s daughter fall in love</p></div>
+        <div><a href="http://www.amazon.com/Spoonwood-Darby-Chronicles-Ernest-Hebert/dp/1611686296" target="_blank"><img src="assets/images/books/book6.jpg"></a><br><p class="book_cap">Caption here</p></div>
+        <div><a href="http://www.amazon.com/Howard-Elmans-Farewell-Darby-Chronicles/dp/1611685419" target="_blank"><img src="assets/images/books/book7.jpg"></a><br><p class="book_cap">Suppose all a man has left is his imagination. Then what?</p></div>
       </div>
       <br>
     </section>
@@ -153,13 +156,20 @@
           </div>
         </div><br>
       <div class="gallery">
-        <div><img src="assets/images/gallery/Cooty_cabin_Door_15.03.19.1_2.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/gallery/Cooty_Cabin_Door_15.04.05.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/gallery/Cooty_broom_14.09.11.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/gallery/Cooty_Bed_Footlocker.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/gallery/Beech_tree_winter.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/gallery/Cooty_Cabin_15.03.31.jpg"><br><p>Caption here</p></div>
-        <div><img src="assets/images/gallery/Cooty's_Tiny_Table.jpg"><br><p>Caption here</p></div>
+        <div><a href="assets/images/gallery/large/cabindoor1.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/cabindoor1_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/cabindoor2.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/cabindoor2_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/broom.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/broom_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/bed_footlocker.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/bed_footlocker_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/BeechTreeWinter.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/BeechTreeWinter_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootyCabin2.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootyCabin2_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootysTinyTable.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootysTinyTable_thumb.jpg"></a></div>
+
         <div><img src="assets/images/gallery/Cooty_Stick_3.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/gallery/cooty_cabin.jpg"><br><p>Caption here</p></div>
         <div><img src="assets/images/gallery/Cooty_Night_Stand.jpg"><br><p>Caption here</p></div>
@@ -219,7 +229,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
     <section id = "blog">
       <br><br><br>
@@ -342,5 +352,7 @@
       });     
     </script>
     <div><!--container fluid-->
+
+    <script src="assets/lightbox/src/js/lightbox.js"></script>
   </body>
 </html>
