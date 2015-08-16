@@ -14,13 +14,12 @@
   <link rel="stylesheet" type="text/css" href="slick-1.5.7/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="assets/lightbox/dist/css/lightbox.css" />
 
-
   <!--FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>
 
@@ -89,33 +88,69 @@
           </span>
           <img src="assets/images/Darby-map2.png" alt="" usemap="#Map" />
           <map name="Map" id="Map">
-            <area id="basketville" title="Basketville Signs/Jordan Shacks" data-toggle="modal" data-target="#basketville_modal" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
+            <area id="basketville" data-title="Site of Former Basketville Sign and Jordan Shacks" data-text="about basketville" data-toggle="modal" data-target="#master_modal" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
 
-            <area id="cooty" title="Cooty's Cabin" data-toggle="modal" data-target="#cooty_modal" shape="poly" coords="836,117,840,192,1038,183,1031,104,839,119" />
+            <area id="cooty" data-title="Original Site of Cooty's Cabin" data-text="about cooty" data-toggle="modal" data-target="#master_modal" shape="poly" coords="836,117,840,192,1038,183,1031,104,839,119" />
 
-            <area class="my_popup_open" id="folly" alt="" title="Abare's Folly Mountain" href="#" shape="poly" coords="864,231,867,338,1170,320,1155,203,866,233" />
-            <area class="my_popup_open" id="meadow" alt="" title="Great Meadow Village" href="#" shape="poly" coords="642,254,654,385,750,376,735,239,643, 255" />
-            <area class="my_popup_open" id="plc" alt="" title="PLC Project" href="#" shape="poly" coords="487,637,484,539,687,535,685,634,489,638" />
-            <area class="my_popup_open" id="cutter" alt="" title="Cutter Place" href="#" shape="poly" coords="744,623,746,664,915,659,909,622,746,625" />
-            <area class="my_popup_open" id="elman" alt="" title="Elman's Place" href="#" shape="poly" coords="734,662,734,700,897,695,891,659,735,664" />
-            <area class="my_popup_open" id="ike" alt="" title="Ike's Barn" href="#" shape="poly" coords="975,587,978,670,1110,658,1106,571,976,589" />
-            <area class="my_popup_open" id="pond" alt="" title="Grace Pond" href="#" shape="poly" coords="1160,688,1172,856,1317,861,1306,681,1162,690" />
-            <area class="my_popup_open" id="mccurtain" alt="" title="McCurtin Place" href="#" shape="poly" coords="893,786,898,862,1089,854,1081,768,893,786" />
-            <area class="my_popup_open" id="townhall" alt="" title="Town Hall" href="#" shape="poly" coords="599,897,600,960,723,961,718,897,599,897" />
-            <area class="my_popup_open" id="dorne" alt="" title="Dorne Place" href="#" shape="poly" coords="284,755,284,794,404,792,405,759,285,758" />
-            <area class="my_popup_open" id="farm" alt="" title="Hillary Farm" href="#" shape="poly" coords="157,840,157,877,271,876,270,838,157,842" />
-            <area class="my_popup_open" id="elm" alt="" title="Elm Stump" href="#" shape="poly" coords="1155,930,1159,1001,1273,998,1267,920,1157,931" />
-            <area class="my_popup_open" id="forest" alt="" title="Primeval Forest" href="#" shape="poly" coords="999,960,1000,1042,1147,1043,1143,960,999,960" />
-            <area class="my_popup_open" id="treehouse" alt="" title="Tree House" href="#" shape="poly" coords="1186,1038,1186,1108,1305,1107,1305,1036,1188,1038" />
-            <area  class="my_popup_open" id="latour" alt="" title="Latour's Spoonwood Cabin" href="#" shape="poly" coords="785,1109,788,1182,993,1182,984,1104,785,1109" />
-            <area class="my_popup_open" id="birch" alt="" title="Birch's Ledges" href="#" shape="poly" coords="830,1230,831,1327,1002,1327,999,1224,833,1231" />
-            <area class="my_popup_open" id="salmon" alt="" title="Salmon Estate/Cooty's Cabin" href="#" shape="poly" coords="1107,1167,1115,1326,1251,1326,1241,1170,1107,1167" />
-            <area class="my_popup_open" id="turner" alt="" title="Turner Jordyn's Place" href="#" shape="poly" coords="423,1029,428,1133,545,1140,543,1034,425,1031" />
-            <area class="my_popup_open" id="sandbank" alt="" title="Sandbank" href="#" shape="poly" coords="251,999,252,1086,353,1084,353,994,253,998" />
+            <area id="folly" alt="" data-title="Abare's Folly Mountain" data-text="about folly" data-toggle="modal" data-target="#master_modal" shape="poly" coords="864,231,867,338,1170,320,1155,203,866,233" />
+
+            <area id="meadow" alt="" data-title="Great Meadow Village" data-text="about meadow" data-toggle="modal" data-target="#master_modal" shape="poly" coords="642,254,654,385,750,376,735,239,643, 255" />
+
+            <area id="plc" alt="" data-title="PLC Project" data-text="about plc" data-toggle="modal" data-target="#master_modal" shape="poly" coords="487,637,484,539,687,535,685,634,489,638" />
+
+            <area id="cutter" alt="" data-title="Cutter Place" data-text="about cutter" data-toggle="modal" data-target="#master_modal" shape="poly" coords="744,623,746,664,915,659,909,622,746,625" />
+
+            <area id="elman" alt="" data-title="Elman's Place" data-text="about elman" data-toggle="modal" data-target="#master_modal" shape="poly" coords="734,662,734,700,897,695,891,659,735,664" />
+
+            <area id="ike" alt="" data-title="Ike's Barn" data-text="about ike" data-toggle="modal" data-target="#master_modal" shape="poly" coords="975,587,978,670,1110,658,1106,571,976,589" />
+
+            <area id="pond" alt="" data-title="Grace Pond" data-text="about pond" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1160,688,1172,856,1317,861,1306,681,1162,690" />
+
+            <area id="mccurtin" alt="" data-title="McCurtin Place" data-text="about mccurtin" data-toggle="modal" data-target="#master_modal" shape="poly" coords="893,786,898,862,1089,854,1081,768,893,786" />
+
+            <area id="townhall" alt="" data-title="Town Hall" data-text="about townhall" data-toggle="modal" data-target="#master_modal" shape="poly" coords="599,897,600,960,723,961,718,897,599,897" />
+
+            <area id="dorne" alt="" data-title="Dorne Place" data-text="about dorne" data-toggle="modal" data-target="#master_modal" shape="poly" coords="284,755,284,794,404,792,405,759,285,758" />
+
+            <area id="farm" alt="" data-title="Hillary Farm" data-text="about farm" data-toggle="modal" data-target="#master_modal" shape="poly" coords="157,840,157,877,271,876,270,838,157,842" />
+
+            <area id="elm" alt="" data-title="Elm Stump" data-text="about elm" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1155,930,1159,1001,1273,998,1267,920,1157,931" />
+
+            <area id="forest" alt="" data-title="Primeval Forest" data-text="about forest" data-toggle="modal" data-target="#master_modal" shape="poly" coords="999,960,1000,1042,1147,1043,1143,960,999,960" />
+
+            <area id="treehouse" alt="" data-title="Tree House" data-text="about treehouse" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1186,1038,1186,1108,1305,1107,1305,1036,1188,1038" />
+
+            <area id="latour" alt="" data-title="Latour's Spoonwood Cabin" data-text="about latour" data-toggle="modal" data-target="#master_modal" shape="poly" coords="785,1109,788,1182,993,1182,984,1104,785,1109" />
+
+            <area id="birch" alt="" data-title="Birch's Ledges" data-text="about birch" data-toggle="modal" data-target="#master_modal" shape="poly" coords="830,1230,831,1327,1002,1327,999,1224,833,1231" />
+
+            <area id="salmon" alt="" data-title="Salmon Estate/Cooty's Cabin" data-text="about salmon" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1107,1167,1115,1326,1251,1326,1241,1170,1107,1167" />
+
+            <area id="turner" alt="" data-title="Turner Jordyn's Place" data-text="about turner" data-toggle="modal" data-target="#master_modal" shape="poly" coords="423,1029,428,1133,545,1140,543,1034,425,1031" />
+
+            <area id="sandbank" alt="" data-title="Sandbank" data-text="about sandbank" data-toggle="modal" data-target="#master_modal" shape="poly" coords="251,999,252,1086,353,1084,353,994,253,998" />
           </map>
         </div>
       </div>
     </section> <!-- END MAP -->
+
+    <!-- MODAL -->
+    <div class="modal" id="master_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">...</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
     <section id = "books">
       <br><br>
@@ -197,7 +232,7 @@
     </section>
 
     <!-- Modal -->
-    <div class="modal" id="basketville_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- <div class="modal" id="basketville_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -229,7 +264,7 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>  -->
 
     <section id = "blog">
       <br><br><br>
@@ -256,6 +291,16 @@
       $(document).ready(function(e) {
         $('img[usemap]').rwdImageMaps();
       });
+
+      $('#master_modal').on('show.bs.modal', function (event) {
+        var area = $(event.relatedTarget) // Button that triggered the modal
+        var title = area.data('title') // Extract info from data-* attributes
+        var text = area.data('text')
+        var modal = $(this)
+        modal.find('.modal-title').text(title)
+        modal.find('.modal-body').text(text)
+      })
+
       $(document).ready(function(){
         $('.gallery').slick({
           mobileFirst: true,
