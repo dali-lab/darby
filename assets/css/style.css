@@ -89,6 +89,10 @@ a:hover {
     text-align: center;
 }
 
+.about_text {
+    text-align: left;
+}
+
 #map { 
     background-color: #F7F0DC;
     text-align: center;
