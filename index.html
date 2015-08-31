@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="slick-1.5.7/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick-1.5.7/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="assets/lightbox/dist/css/lightbox.css" />
+  <!--For full screen book modals-->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
   <!--FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
@@ -170,9 +172,12 @@
           </div>
         </div><br>
       <div class="books">
+
         <div><a href="http://www.amazon.com/Dogs-March-Darby-Chronicles-Book-ebook/dp/B00MHT561K" target="_blank"><img src="assets/images/books/book1.jpg"></a><br><p class="book_cap">“His life had come to this: save a few deer from the jaws of dogs. He was a small man sent to perform a small task.”</p></div>
 
-        <div><a href="http://www.amazon.com/Little-More-Than-Darby-Chronicles/dp/1611686237" target="_blank"><img src="assets/images/books/book2.jpg"></a><br><p class="book_cap">Ollie Jordan: "Everybody's got an idiot chained to him, only difference is, mine's here to see"</p></div>
+        <!-- <div><a href="http://www.amazon.com/Little-More-Than-Darby-Chronicles/dp/1611686237" target="_blank"><img src="assets/images/books/book2.jpg"></a><br><p class="book_cap">Ollie Jordan: "Everybody's got an idiot chained to him, only difference is, mine's here to see"</p></div> -->
+        <div><a id="book2" href="#animatedModal"><img src="assets/images/books/book2.jpg"></a><br><p class="book_cap">Ollie Jordan: “Everybody’s got an idiot chained to him, only difference is, mine’s here to see”</p></div>
+
         <div><a href="http://www.amazon.com/Whisper-My-Name-Darby-Chronicles/dp/1611686253" target="_blank"><img src="assets/images/books/book3.jpg"></a><br><p class="book_cap">TThe stakes are high when a big company proposes a regional shopping mall in Darby.</p></div>
 
         <div><a href="http://www.amazon.com/Passion-Estelle-Jordan-Darby-Chronicles/dp/161168627X" target="_blank"><img src="assets/images/books/book4.jpg"></a><br><p class="book_cap">Maybe the way to save yourself is to save someone else.</p></div>
@@ -180,10 +185,31 @@
 
         <div><a href="http://www.amazon.com/Spoonwood-Darby-Chronicles-Ernest-Hebert/dp/1611686296" target="_blank"><img src="assets/images/books/book6.jpg"></a><br><p class="book_cap">How a boy saved his dad and brought together warring families.</p></div>
 
+        <!-- <div><a href="http://www.amazon.com/Dogs-March-Darby-Chronicles-Book-ebook/dp/B00MHT561K" target="_blank"><img src="assets/images/books/book1.jpg"></a><br><p class="book_cap">“His life had come to this: save a few deer from the jaws of dogs. He was a small man sent to perform a small task.”</p></div> -->
+        <!-- <div><a href="assets/images/books/book1.jpg" data-lightbox="image-1" data-title="My caption"><img src="assets/images/books/book1.jpg"/></a><br><p class="book_cap">“His life had come to this: save a few deer from the jaws of dogs. He was a small man sent to perform a small task.”</p></div> -->
+
+        
+        <!-- <div><a href="http://www.amazon.com/Whisper-My-Name-Darby-Chronicles/dp/1611686253" target="_blank"><img src="assets/images/books/book3.jpg"></a><br><p class="book_cap">The stakes are high when a company proposes to build a regional shopping mall in Darby</p></div>
+        <div><a href="http://www.amazon.com/Passion-Estelle-Jordan-Darby-Chronicles/dp/161168627X" target="_blank"><img src="assets/images/books/book4.jpg"></a><br><p class="book_cap">Maybe the way to save yourself is to save someone else</p></div>
+        <div><a href="http://www.amazon.com/Live-Free-Die-Darby-Chronicles/dp/1611687063" target="_blank"><img src="assets/images/books/book5.jpg"></a><br><p class="book_cap">Long drop, no net, when the trash man’s son and the squire’s daughter fall in love</p></div>
+        <div><a href="http://www.amazon.com/Spoonwood-Darby-Chronicles-Ernest-Hebert/dp/1611686296" target="_blank"><img src="assets/images/books/book6.jpg"></a><br><p class="book_cap">Caption here</p></div> -->
+
         <div><a href="http://www.amazon.com/Howard-Elmans-Farewell-Darby-Chronicles/dp/1611685419" target="_blank"><img src="assets/images/books/book7.jpg"></a><br><p class="book_cap">Suppose all a man has left is his imagination. Then what?</p></div>
       </div>
       <br>
     </section>
+
+    <!--DEMO01-->
+      <div id="animatedModal"> 
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <div class="close-animatedModal"> 
+        CLOSE MODAL
+      </div>
+            
+      <div class="modal-content">
+          Content here
+      </div>
+    </div>
 
     <section id = "gallery">
       <br>
@@ -278,5 +304,6 @@
     <div><!--container fluid-->
     <script type="text/javascript" src="assets/js/index.js"></script>
     <script src="assets/lightbox/src/js/lightbox.js"></script>
+    
   </body>
 </html>
