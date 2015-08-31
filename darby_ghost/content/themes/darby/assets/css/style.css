@@ -1,0 +1,349 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #FAEBBC;
+    text-align: center;
+}
+
+body {
+    padding-top: 65px;
+}
+
+/* GALLERY */
+ul {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+ul li {
+    list-style:none;
+    margin-bottom:25px;
+}
+
+ul li img {
+    cursor: pointer;
+    width: 100%;
+    -webkit-filter: grayscale(50%);
+}
+
+ul li img:hover{
+    -webkit-filter: none;
+}
+
+.book_cap {
+    max-width: 200px;
+    font-family: Garamond; 
+    font-size: 18px; 
+    font-style: italic;
+    color: #262120
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}​
+
+area { 
+    cursor: tooltip;
+}
+
+a:hover { 
+	color: #FFFFFF;
+}
+
+.covers {
+    display: inline-block;
+    padding: 2%;
+}
+
+.header-img { 
+	width: 100vw;
+	height: 60px;
+	background-image: url("{{images "navbar.gif"}}");
+}
+
+/* ====================================================
+    SECTIONS
+   ================================================= */
+
+#about {
+    background-color: #FAEBBC;
+    text-align: center;
+}
+
+.about_text {
+    text-align: left;
+}
+
+#map { 
+    background-color: #F7F0DC;
+    text-align: center;
+}
+
+#books { 
+    background-color: #F7EDBF;
+    text-align: center;
+}
+
+#gallery {
+    background-color: #D2C5AA;
+    text-align: center;
+}
+
+.blog-posts {
+    text-align: left;
+}
+.page_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:28px;
+    text-align: center;
+    background-image: url("../images/navbar.gif");
+}
+
+#bottom {
+    text-align: center;
+    background-color: #D1D8A5;
+}
+
+/* ====================================================
+    MODAL
+   ================================================= */
+
+.modal {
+    padding-top: 100px;
+}
+
+.modal-content{
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+/* ====================================================
+    NAVIGATION BAR CSS 
+   ================================================= */
+.navbar .nav {
+    float: none;
+    text-align: center;
+    height: 65px;
+}
+
+.navbar .nav li{
+	width: 15%;
+	display: inline-block;
+	float: none;
+}
+
+.navbar-inner{
+	background-image: url("../images/navbar.gif");
+	background-repeat: repeat-x;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #EAE4CD;
+	opacity: 1.0;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	color: white;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-family: 'Amatic SC';
+	padding-top: 20px;
+	font-size: 42px;
+ 	color: #EAE4CD;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FFFFFF;
+}
+
+img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+#map-container{
+	width: 900px; margin: auto;
+}
+
+.map-clickable{
+	position: absolute;
+	/* background-color: black; */
+	border: 1px solid black;
+}
+
+/* ==========================================================================
+   5. Single Post - When you click on an individual post
+   ========================================================================== */
+
+.post-template .post-header {
+   margin-bottom: 3.4rem;
+}
+
+.post-template .post-title {
+    margin-bottom: 0;
+}
+
+.post-template .post-meta {
+    margin: 0;
+}
+
+.post-template .post-date {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* Stop elements, such as img wider than the post content, from
+   creating horizontal scroll - slight hack due to imperfections
+   with browser width % calculations and rounding */
+.post-template .content {
+    overflow: hidden;
+}
+
+/* Tweak the .post wrapper style */
+.post-template .post {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Kill that stylish little circle that was on the border, too */
+.post-template .post:after {
+    display: none;
+}
+
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
+.post-content img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
+}
+
+.footnotes {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+
+.footnotes li {
+    margin: 0.6rem 0;
+}
+
+.footnotes p {
+    margin: 0;
+}
+
+.footnotes p a:last-child {
+    text-decoration: none;
+}
+
+
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    margin: 6rem 0 0 0;
+    padding: 6rem 0 0 0;
+    border-top: #EBF2F6 1px solid;
+}
+
+.post-footer h4 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.post-footer p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+}
+
+/* list of author links - location / url */
+.author-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+}
+
+.author-meta a {
+    color: #9EABB3;
+}
+.author-meta a:hover {
+    color: #111;
+}
+
+/* Create some space to the right for the share links */
+.post-footer .author {
+    margin-right: 180px;
+}
+
+.post-footer h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+.post-footer .share {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 140px;
+}
+
+.post-footer .share a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 1.6rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.post-footer .share .icon-twitter:hover {
+    color: #55acee;
+}
+.post-footer .share .icon-facebook:hover {
+    color: #3b5998;
+}
+.post-footer .share .icon-google-plus:hover {
+    color: #dd4b39;
+}

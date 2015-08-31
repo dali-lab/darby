@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{! Meta Tags for Responsive Behaviour }}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome/css/font-awesome.min.css"}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "slick-1.5.7/slick/slick.css"}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "slick-1.5.7/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "lightbox/dist/css/lightbox.css"}}" />
+
+    <!--FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    <div class="container-fluid" style="padding: 0px">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-inner">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">ABOUT<span class="sr-only">(current)</span></a></li>
+            <li><a href="#map">MAP</a></li>
+            <li><a href="#books">BOOKS</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#blog">BLOG</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <section id = "about">
+      <br><br><br>
+      <div class = "row">
+        <div class = "col-md-12">
+          <span style="font-family: Amatic SC; font-weight: 400; font-size: 60px; color: #9F3B2E"> ERNEST HEBERT'S GUIDE TO THE </span><br>
+          <span style="font-family: Amatic SC; font-weight: 700; font-size: 100px; color: #653131"> DARBY CHRONICLES </span>
+        </div>
+        <!-- ABOUT TEXT -->
+        <div class = "row">
+          <div class = "col-md-2"></div>
+          <div class = "col-md-8">
+            <div class="about_text" style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+              I never thought I'd live long enough to see the 21st Century, but here I am more than a decade into this loony tunes arcade of a century--and I love it. It's grim, fun, despairing, promising, hallucinatory. All at the same time. I'm up hoping that sharing this website will me and anyone who visits little closer ... to ... what? I'm looking for God, I'm looking for a clue to save our planet, I'm looking for a metaphor, call it recycling reality, to explain my brief visit to this earthly realm. 
+              <br><br>
+              What do I, this mad septuagenarian, have in his creative life to leave the world? There's my historical novel, THE OLD AMERICAN, and my two crazy sci-fi books, MAD BOYS and I LOVE U, my only consciously autobiographical novel, NEVER BACK DOWN, and a bunch of poems that I call The Contrarian Voice.
+              <br><br>
+              Through it all are the seven novels of The Darby Chronicles: Life, Death and Laughs in a Small Town.
+              <br><br>
+              For me the small town is a metaphor for a nurturing environment greater than the family, the job, the church, the school, and the political unit. The equivalent of the small town could be your urban neighborhood, your army platoon, your Facebook friends, your co-conspirators. For me it's Darby, my imaginary New England village. It has rich people, poor people, and everybody in between; farms, houses, trailers, mansions, a pond, a river, and a land trust. I've tried to show the good, the bad, the ugly, the far side and the dark matter.
+            </div>
+          </div>
+        </div>
+        <br>
+        <img src="assets/images/leaf.png" />
+        <br>
+        <a href ="#map"><i class="fa fa-angle-down fa-5x"></i></a>
+        <br><br>
+      </div>
+    </section>
+
+    <section id = "map">
+      <br><br><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> MAP </span><br>
+          <span style = "font-family: Garamond; font-size: 22px; color: #56513C"> 
+            Click to explore the town of Darby.
+          </span>
+          <img src="assets/images/Darby-map2.png" alt="" usemap="#Map" />
+          <map name="Map" id="Map">
+            <area id="basketville" data-title="Site of Former Basketville Sign and Jordan Shacks" data-text="about basketville" data-toggle="modal" data-target="#master_modal" shape="poly" coords="309,219,309,313,495,307,483,210,312,221" />
+
+            <area id="cooty" data-title="Original Site of Cooty's Cabin" data-text="about cooty" data-toggle="modal" data-target="#master_modal" shape="poly" coords="836,117,840,192,1038,183,1031,104,839,119" />
+
+            <area id="folly" alt="" data-title="Abare's Folly Mountain" data-text="about folly" data-toggle="modal" data-target="#master_modal" shape="poly" coords="864,231,867,338,1170,320,1155,203,866,233" />
+
+            <area id="meadow" alt="" data-title="Great Meadow Village" data-text="about meadow" data-toggle="modal" data-target="#master_modal" shape="poly" coords="642,254,654,385,750,376,735,239,643, 255" />
+
+            <area id="plc" alt="" data-title="PLC Project" data-text="about plc" data-toggle="modal" data-target="#master_modal" shape="poly" coords="487,637,484,539,687,535,685,634,489,638" />
+
+            <area id="cutter" alt="" data-title="Cutter Place" data-text="about cutter" data-toggle="modal" data-target="#master_modal" shape="poly" coords="744,623,746,664,915,659,909,622,746,625" />
+
+            <area id="elman" alt="" data-title="Elman's Place" data-text="about elman" data-toggle="modal" data-target="#master_modal" shape="poly" coords="734,662,734,700,897,695,891,659,735,664" />
+
+            <area id="ike" alt="" data-title="Ike's Barn" data-text="about ike" data-toggle="modal" data-target="#master_modal" shape="poly" coords="975,587,978,670,1110,658,1106,571,976,589" />
+
+            <area id="pond" alt="" data-title="Grace Pond" data-text="about pond" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1160,688,1172,856,1317,861,1306,681,1162,690" />
+
+            <area id="mccurtin" alt="" data-title="McCurtin Place" data-text="about mccurtin" data-toggle="modal" data-target="#master_modal" shape="poly" coords="893,786,898,862,1089,854,1081,768,893,786" />
+
+            <area id="townhall" alt="" data-title="Town Hall" data-text="about townhall" data-toggle="modal" data-target="#master_modal" shape="poly" coords="599,897,600,960,723,961,718,897,599,897" />
+
+            <area id="dorne" alt="" data-title="Dorne Place" data-text="about dorne" data-toggle="modal" data-target="#master_modal" shape="poly" coords="284,755,284,794,404,792,405,759,285,758" />
+
+            <area id="farm" alt="" data-title="Hillary Farm" data-text="about farm" data-toggle="modal" data-target="#master_modal" shape="poly" coords="157,840,157,877,271,876,270,838,157,842" />
+
+            <area id="elm" alt="" data-title="Elm Stump" data-text="about elm" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1155,930,1159,1001,1273,998,1267,920,1157,931" />
+
+            <area id="forest" alt="" data-title="Primeval Forest" data-text="about forest" data-toggle="modal" data-target="#master_modal" shape="poly" coords="999,960,1000,1042,1147,1043,1143,960,999,960" />
+
+            <area id="treehouse" alt="" data-title="Tree House" data-text="about treehouse" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1186,1038,1186,1108,1305,1107,1305,1036,1188,1038" />
+
+            <area id="latour" alt="" data-title="Latour's Spoonwood Cabin" data-text="about latour" data-toggle="modal" data-target="#master_modal" shape="poly" coords="785,1109,788,1182,993,1182,984,1104,785,1109" />
+
+            <area id="birch" alt="" data-title="Birch's Ledges" data-text="about birch" data-toggle="modal" data-target="#master_modal" shape="poly" coords="830,1230,831,1327,1002,1327,999,1224,833,1231" />
+
+            <area id="salmon" alt="" data-title="Salmon Estate/Cooty's Cabin" data-text="about salmon" data-toggle="modal" data-target="#master_modal" shape="poly" coords="1107,1167,1115,1326,1251,1326,1241,1170,1107,1167" />
+
+            <area id="turner" alt="" data-title="Turner Jordyn's Place" data-text="about turner" data-toggle="modal" data-target="#master_modal" shape="poly" coords="423,1029,428,1133,545,1140,543,1034,425,1031" />
+
+            <area id="sandbank" alt="" data-title="Sandbank" data-text="about sandbank" data-toggle="modal" data-target="#master_modal" shape="poly" coords="251,999,252,1086,353,1084,353,994,253,998" />
+          </map>
+        </div>
+      </div>
+    </section> <!-- END MAP -->
+
+    <!-- MODAL -->
+    <div class="modal" id="master_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">...</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <section id = "books">
+      <br><br>
+      <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> BOOKS </span>
+      <br><br>
+      <div class = "row">
+          <div class = "col-md-2"></div>
+          <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. Etiam lacinia dui ut sollicitudin rhoncus. Nunc convallis quam vitae tortor varius feugiat. Donec pellentesque convallis nisi at sodales. Cras non magna sem. Integer sit amet commodo leo. In sit amet justo tellus. Duis non nisi eget nunc rhoncus mollis. Vivamus pharetra purus in orci posuere, in pretium dui tristique. 
+            </span>
+          </div>
+        </div><br>
+      <div class="books">
+        <div><a href="http://www.amazon.com/Dogs-March-Darby-Chronicles-Book-ebook/dp/B00MHT561K" target="_blank"><img src="assets/images/books/book1.jpg"></a><br><p class="book_cap">“His life had come to this: save a few deer from the jaws of dogs. He was a small man sent to perform a small task.”</p></div>
+
+        <div><a href="http://www.amazon.com/Little-More-Than-Darby-Chronicles/dp/1611686237" target="_blank"><img src="assets/images/books/book2.jpg"></a><br><p class="book_cap">Ollie Jordan: "Everybody's got an idiot chained to him, only difference is, mine's here to see"</p></div>
+        <div><a href="http://www.amazon.com/Whisper-My-Name-Darby-Chronicles/dp/1611686253" target="_blank"><img src="assets/images/books/book3.jpg"></a><br><p class="book_cap">TThe stakes are high when a big company proposes a regional shopping mall in Darby.</p></div>
+
+        <div><a href="http://www.amazon.com/Passion-Estelle-Jordan-Darby-Chronicles/dp/161168627X" target="_blank"><img src="assets/images/books/book4.jpg"></a><br><p class="book_cap">Maybe the way to save yourself is to save someone else.</p></div>
+        <div><a href="http://www.amazon.com/Live-Free-Die-Darby-Chronicles/dp/1611687063" target="_blank"><img src="assets/images/books/book5.jpg"></a><br><p class="book_cap">Long drop, no net when the trash man's son and the squire's daughter fall in love.</p></div>
+
+        <div><a href="http://www.amazon.com/Spoonwood-Darby-Chronicles-Ernest-Hebert/dp/1611686296" target="_blank"><img src="assets/images/books/book6.jpg"></a><br><p class="book_cap">How a boy saved his dad and brought together warring families.</p></div>
+
+        <div><a href="http://www.amazon.com/Howard-Elmans-Farewell-Darby-Chronicles/dp/1611685419" target="_blank"><img src="assets/images/books/book7.jpg"></a><br><p class="book_cap">Suppose all a man has left is his imagination. Then what?</p></div>
+      </div>
+      <br>
+    </section>
+
+    <section id = "gallery">
+      <br>
+      <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> GALLERY </span>
+      <br>
+      <div class = "row">
+          <div class = "col-md-2"></div>
+          <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. Etiam lacinia dui ut sollicitudin rhoncus. Nunc convallis quam vitae tortor varius feugiat. Donec pellentesque convallis nisi at sodales. Cras non magna sem. Integer sit amet commodo leo. In sit amet justo tellus. Duis non nisi eget nunc rhoncus mollis. Vivamus pharetra purus in orci posuere, in pretium dui tristique.
+            </span>
+          </div>
+        </div><br>
+      <div class="gallery">
+        <div><a href="assets/images/gallery/large/cabindoor1.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/cabindoor1_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/cabindoor2.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/cabindoor2_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/broom.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/broom_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/bed_footlocker.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/bed_footlocker_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/BeechTreeWinter.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/BeechTreeWinter_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootyCabin2.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootyCabin2_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootysTinyTable.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootysTinyTable_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootyStick.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Cooty_Stick_3.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootyCabin.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootyCabin_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootyNightStand.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootyNightStand_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/CootyTools.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/CootyTools_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Cooty_Stick_01.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Cooty_Stick_01_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Cooty_Stick_02.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Cooty_Stick_02_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Estelle_wall.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Estelle_wall_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Feet_Footlocker.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Feet_Footlocker_thumb.jpg"><br></a></div>
+
+        <div><a href="assets/images/gallery/large/Howard_Elman's_Farewell.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Howard_Elman's_Farewell_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Howard_Hat.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Howard_Hat_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Jack_Ernie.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Jack_Ernie_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Live_Free_or_Die.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Live_Free_or_Die_thumb.jpg"></a>></div>
+
+        <div><a href="assets/images/gallery/large/Mallat_drawknife.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Mallat_drawknife_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Old_American.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Old_American_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Perley_Swett.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Perley_Swett_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Cooty_Window.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Cooty_Window_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Spoonwood.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Spoonwood_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Sticks.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Sticks_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Streamer_Fly_Hook.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Streamer_Fly_Hook_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Dogs of March.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/the_dogs_of_march_thumb.jpg"></a></div>
+
+        <div><a href="assets/images/gallery/large/Passion_of_Estelle_Jordan.jpg" data-lightbox="gallery_images" data-title="My caption"><img src="assets/images/gallery/Passion_of_Estelle_Jordan_thumb.jpg"></a></div>
+      </div><br>
+    </section>
+
+    <section id = "blog">
+        <br><br><br>
+        <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> BLOG </span>
+        <br><br>
+        <div class = "row">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. <br><br>
+            </span>
+
+
+        </div>
+        </div>
+        <a href="#about" style="font-family: Amatic SC; font-weight: 700; font-size: 50px; color: #5A5245"> BACK TO TOP </a><br>
+    </section>
+
+    <div class = "row page_footer"></div>
+    <!-- Include jQuery Scalable Map -->
+    <script src="assets/js/jquery.rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+      });
+
+      $('#master_modal').on('show.bs.modal', function (event) {
+        var area = $(event.relatedTarget) // Button that triggered the modal
+        var title = area.data('title') // Extract info from data-* attributes
+        var text = area.data('text')
+        var modal = $(this)
+        modal.find('.modal-title').text(title)
+        modal.find('.modal-body').text(text)
+      })
+
+      $(document).ready(function(){
+        $('.gallery').slick({
+          mobileFirst: true,
+          variableWidth: true,
+          speed : 350,
+          centerMode: false,
+          dots: true,
+          initialSlide: 0,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 200,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });   
+      $(document).ready(function(){
+        $('.books').slick({
+          mobileFirst: true,
+          variableWidth: true,
+          speed : 350,
+          centerMode: false,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 1250,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
+        });
+      });     
+    </script>
+    <div><!--container fluid-->
+
+    <script src="{{asset "lightbox/src/js/lightbox.js"}}"></script>
+
+<!--     {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}} -->
+
+
+    </body>
+</html>
