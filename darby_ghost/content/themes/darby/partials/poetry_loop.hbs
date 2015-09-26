@@ -3,9 +3,9 @@
     {{pagination}}
 </div> --}}
 
-{{! This is the post loop - each post will be output using this markup }}
+{{! This is the poetry post loop - each poetry post will be output using this markup }}
 {{#foreach posts}}
-{{^has tag="poetry"}}
+{{#has tag="poetry"}}
 <article class="{{post_class}}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>

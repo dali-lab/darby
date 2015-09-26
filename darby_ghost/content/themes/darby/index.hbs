@@ -218,6 +218,51 @@
       </div>
     </section>
 
+    <section id = "poetry">
+      <br><br><br>
+      <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245; text-align: center"> POETRY </span>
+      <br><br>
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. <br><br>
+            </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8 blog-posts">
+          {{! The tag below includes the post loop - partials/poetry_loop.hbs }}
+          {{> "poetry_loop"}}
+        </div>
+        <div class = "col-md-2"></div>
+      </div>
+    </section>
+
+
+    <section id = "Essays">
+      <br><br><br>
+      <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245; text-align: center"> ESSAYS </span>
+      <br><br>
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8">
+            <span style = "font-family: Garamond; font-size: 18px; color: #262120"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ultricies orci. Pellentesque fringilla venenatis ante, a efficitur est. Quisque sagittis quam eros, eu varius lectus porttitor vel. <br><br>
+            </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8 blog-posts">
+          {{! The tag below includes the post loop - partials/essay_loop.hbs }}
+          {{> "essay_loop"}}
+        </div>
+        <div class = "col-md-2"></div>
+      </div>
+    </section>
+
     <!--JS LINKS-->
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script type="text/javascript" src="{{asset "lightbox/dist/js/lightbox.js"}}"></script>

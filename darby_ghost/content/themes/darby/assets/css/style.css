@@ -98,6 +98,16 @@ a:hover {
     text-align: center;
 }
 
+#poetry {
+    background-color: #D2C5AA;
+    text-align: center;
+}
+
+#essays {
+    background-color: #F7EDBF;
+    text-align: center;
+}
+
 .blog-posts {
     text-align: left;
 }
