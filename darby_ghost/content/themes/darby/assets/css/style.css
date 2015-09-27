@@ -38,7 +38,7 @@ ul li img:hover{
     font-family: Garamond; 
     font-size: 18px; 
     font-style: italic;
-    color: #262120
+    color: #262120;
 }
 
 #overlay {
@@ -68,6 +68,10 @@ a:hover {
 	width: 100vw;
 	height: 60px;
 	background-image: url("{{images "navbar.gif"}}");
+}
+
+.row {
+    font-family: Garamond;
 }
 
 /* ====================================================
