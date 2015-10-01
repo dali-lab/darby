@@ -87,19 +87,23 @@ a:hover {
     text-align: left;
 }
 
+#books { 
+    background-color: #D2C5AA;
+    text-align: center;
+}
+
 #map { 
     background-color: #F7F0DC;
     text-align: center;
 }
 
-#books { 
+#gallery {
     background-color: #F7EDBF;
     text-align: center;
 }
 
-#gallery {
-    background-color: #D2C5AA;
-    text-align: center;
+.gallery_text {
+    text-align: left;
 }
 
 #poetry {
@@ -107,9 +111,21 @@ a:hover {
     text-align: center;
 }
 
+.poetry_text {
+    text-align: left;
+}
+
 #essays {
-    background-color: #F7EDBF;
+    background-color: #F7F0DC;
     text-align: center;
+}
+
+.essays_text {
+    text-align: left;
+}
+
+#blog {
+    background-color: #F7EDBF;
 }
 
 .blog-posts {
@@ -118,7 +134,7 @@ a:hover {
 .page_footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 110%;
     height:28px;
     text-align: center;
     background-image: url("../images/navbar.gif");
