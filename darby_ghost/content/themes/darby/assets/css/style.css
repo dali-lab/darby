@@ -98,7 +98,7 @@ a:hover {
 }
 
 #gallery {
-    background-color: #F7EDBF;
+    background-color: #D2C5AA;
     text-align: center;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 }
 
 #poetry {
-    background-color: #D2C5AA;
+    background-color: #FAEBBC;
     text-align: center;
 }
 
@@ -206,7 +206,7 @@ a:hover {
 img[usemap] {
 	border: none;
 	height: auto;
-	max-width: 100%;
+	max-width: 77%;
 	width: auto;
 }
 
