@@ -122,6 +122,9 @@ a:hover {
 
 .essays_text {
     text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 64%;
 }
 
 #blog {
