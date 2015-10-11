@@ -11,60 +11,16 @@ $('#master_modal').on('show.bs.modal', function (event) {
   var text = area.data('text')
   var modal = $(this)
   modal.find('.modal-title').text(title)
-  modal.find('.modal-body').text(text)
+  modal.find('.modal-body').html(text)
 })
-
-$(document).ready(function(){
-  $('.gallery').slick({
-    mobileFirst: true,
-    variableWidth: true,
-    speed : 350,
-    centerMode: false,
-    dots: true,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 200,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-});   
+  
 $(document).ready(function(){
   $('.books').slick({
     mobileFirst: true,
     variableWidth: true,
     speed : 350,
     centerMode: false,
-    dots: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 1250,
