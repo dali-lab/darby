@@ -3,6 +3,7 @@
 
 $(document).ready(function(e) {
   $('img[usemap]').rwdImageMaps();
+  $('img[usemap]').maphilight();
 });
 
 $('#master_modal').on('show.bs.modal', function (event) {

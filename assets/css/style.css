@@ -173,6 +173,9 @@ img[usemap] {
 	max-width: 100%;
 	width: auto;
 }
+img:hover {
+    cursor: hand;
+}
 
 #map-container{
 	width: 900px; margin: auto;
