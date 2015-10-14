@@ -126,6 +126,13 @@ a:hover {
     text-align: center;
 }
 
+.download {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Amatic SC";
+    color: #810000;
+}
+
 .essays_text {
     text-align: left;
     margin-right: auto;
