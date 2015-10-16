@@ -133,11 +133,13 @@ a:hover {
     color: #810000;
 }
 
-.essays_text {
-    text-align: left;
-    margin-right: auto;
-    margin-left: auto;
-    width: 64%;
+
+
+.page-title {
+    font-family: Amatic SC;
+    font-weight: 700;
+    font-size: 75px;
+    color: #5A5245;
 }
 
 #blog {
@@ -546,9 +548,24 @@ img[usemap] {
     display: none;
 }
 
-/*.slick-prev:after {
-    padding-top: 1000px;
+.page-description {
+    font-family: Garamond;
+    font-size: 18px;
+    color: #262120;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 77%;
 }
-.slick-next:before {
-    padding-top: 1000px;
-}*/
+
+.tag-posts {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-family: Garamond;
+}
+
+.tag-posts a{
+    color: brown;
+}
