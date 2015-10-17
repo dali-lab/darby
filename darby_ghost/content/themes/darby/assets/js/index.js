@@ -28,7 +28,6 @@ $(document).ready(function(){
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: false,
-          dots: true
         }
       },
       {
@@ -37,14 +36,14 @@ $(document).ready(function(){
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: false,
-          dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: false,
         }
       },
       {
@@ -52,6 +51,7 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          infinite: false,
         }
       },
       {
@@ -59,6 +59,7 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: false,
         }
       }
     ]
