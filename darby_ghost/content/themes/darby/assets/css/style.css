@@ -180,6 +180,10 @@ a:hover {
     font-size: 15px;
 }
 
+.modal-content a {
+    color: brown;
+}
+
 .modal-title {
     font-family: 'Amatic SC';
     font-size: 30px;
