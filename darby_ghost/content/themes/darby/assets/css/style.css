@@ -126,9 +126,9 @@ a:hover {
     text-align: center;
 }
 
-.mapText {
+.special_text {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Amatic SC";
     color: #810000;
 }
@@ -158,6 +158,9 @@ a:hover {
 
 #bottom {
     text-align: center;
+    font-size: 30px;
+    font-family: "Amatic SC";
+    color: #5A5245;
     background-color: #D1D8A5;
 }
 
@@ -554,10 +557,14 @@ img[usemap] {
     font-family: Garamond;
     font-size: 18px;
     color: #262120;
-    text-align: center;
+    text-align: left;
     margin-right: auto;
     margin-left: auto;
     width: 77%;
+}
+
+.page-description a {
+    color: brown;
 }
 
 .tag-posts {
