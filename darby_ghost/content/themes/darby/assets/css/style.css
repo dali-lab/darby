@@ -164,6 +164,14 @@ a:hover {
     background-color: #D1D8A5;
 }
 
+#dali {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Amatic SC";
+    color: black;
+    background-color: #FAEBBC
+}
+
 /* ====================================================
     MODAL
    ================================================= */
@@ -191,6 +199,7 @@ a:hover {
     font-family: 'Amatic SC';
     font-size: 30px;
     text-align: center;
+
 }
 
 /* ====================================================
