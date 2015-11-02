@@ -205,13 +205,30 @@ a:hover {
 /* ====================================================
     NAVIGATION BAR CSS 
    ================================================= */
-.navbar .nav {
+.navbar a{
+    text-align: left;
+    font-family: 'Amatic SC';
+    color: #EAE4CD;
+    font-size: 42px;
+}
+
+#normalnav {
     float: none;
     text-align: center;
     height: 65px;
 }
 
-.navbar .nav li{
+#mobilenav {;
+    text-align: left;
+    height: 280px;
+}
+
+#mobilenav a{
+    font-size: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#normalnav li{
 	width: 12%;
 	display: inline-block;
 	float: none;
@@ -219,7 +236,7 @@ a:hover {
 
 .navbar-inner{
 	background-image: url("../images/navbar.gif");
-	background-repeat: repeat-x;
+	background-repeat: repeat-x repeat-y;
 }
 
 .navbar-default .navbar-nav>.active>a, 
@@ -243,6 +260,11 @@ a:hover {
 
 .navbar-default .navbar-nav>li>a:hover {
   color: #FFFFFF;
+}
+
+.navbar-header {
+    text-align: left;
+    padding-left: 15px;
 }
 
 img[usemap] {
