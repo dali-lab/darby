@@ -176,8 +176,24 @@ a:hover {
     MODAL
    ================================================= */
 
+/* Next three blocks (.modal, .modal:before, .modal-dialogue) are from http://codepen.io/dimbslmh/full/mKfCc -- centers modal vertically*/
 .modal {
-    padding-top: 100px;
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .modal-content{
