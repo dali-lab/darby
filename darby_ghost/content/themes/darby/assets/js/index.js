@@ -16,7 +16,7 @@ $('#master_modal').on('show.bs.modal', function (event) {
   
 $(document).ready(function(){
   $('.books').slick({
-    mobileFirst: true,
+    mobileFirst: false,
     variableWidth: true,
     speed : 350,
     centerMode: false,
