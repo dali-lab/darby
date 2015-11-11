@@ -6,11 +6,12 @@ html, body {
     overflow-x: hidden;
     background-color: #FAEBBC;
     text-align: center;
-
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
     padding-top: 65px;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* GALLERY */
