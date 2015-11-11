@@ -23,6 +23,14 @@ $(document).ready(function(){
     dots: false,
     responsive: [
       {
+        breakpoint: 5000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
+        }
+      },
+      {
         breakpoint: 1250,
         settings: {
           slidesToShow: 5,
