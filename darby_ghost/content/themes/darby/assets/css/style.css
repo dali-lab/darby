@@ -11,7 +11,6 @@ html, body {
 
 body {
     padding-top: 65px;
-    -webkit-overflow-scrolling: touch;
 }
 
 /* GALLERY */
@@ -79,10 +78,6 @@ a:hover {
 
 .row a {
     color: brown;
-}
-
-#content {
-    -webkit-overflow-scrolling: touch;
 }
 
 /* ====================================================
