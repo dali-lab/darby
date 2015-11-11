@@ -6,6 +6,7 @@ html, body {
     overflow-x: hidden;
     background-color: #FAEBBC;
     text-align: center;
+
 }
 
 body {
@@ -77,6 +78,10 @@ a:hover {
 
 .row a {
     color: brown;
+}
+
+#content {
+    -webkit-overflow-scrolling: touch;
 }
 
 /* ====================================================
