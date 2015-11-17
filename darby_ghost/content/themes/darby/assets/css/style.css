@@ -629,13 +629,24 @@ img[usemap] {
 
 /** For hiding or showing elements based on screen size **/
 
-/** iPhone **/
+/** iPhone - do not display "Click to Explore the Town of Darby" **/
 @media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
-    #click { display: none; }  /* no show on small screens */
+    #click { display: none; } 
 }
 
-/** iPad **/
+/** iPad - do not display "Click to Explore the Town of Darby" **/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  { 
     #click { display: none;}
+}
+
+/** **/
+/** iPhone - do not display largeGallery version **/
+@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
+    #largeGallery { display: none; } 
+}
+
+/** bigger than iPhone - do not display smallGallery version **/
+@media only screen and (min-device-width: 401px) {
+    #smallGallery { display: none; } 
 }
 
