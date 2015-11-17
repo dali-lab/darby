@@ -629,7 +629,13 @@ img[usemap] {
 
 /** For hiding or showing elements based on screen size **/
 
-@media screen and (min-width: 0px) and (max-width: 400px) {
-  #click { display: none; }  /* no show on small screens */
+/** iPhone **/
+@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
+    #click { display: none; }  /* no show on small screens */
+}
+
+/** iPad **/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  { 
+    #click { display: none;}
 }
 
