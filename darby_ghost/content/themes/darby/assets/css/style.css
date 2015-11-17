@@ -629,12 +629,12 @@ img[usemap] {
 
 /** For hiding or showing elements based on screen size **/
 
-/** iPhone - do not display "Click to Explore the Town of Darby" **/
+/** iPhone - do not display "Click to Explore" **/
 @media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
     #click { display: none; } 
 }
 
-/** iPad - do not display "Click to Explore the Town of Darby" **/
+/** iPad - do not display "Click to Explore" **/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  { 
     #click { display: none;}
 }
