@@ -1,0 +1,9 @@
+To edit the CSS: go to assets/css/style.css
+
+To edit navbar: go to default.hbs
+
+To edit the homepage (including map and gallery), go to index.hbs
+
+To edit the 'blog', 'essays', or 'poetry' sections, go to tag-____.hbs
+
+To edit how a post looks when you click it, go to post.hbs
