@@ -2,6 +2,8 @@
 Running at 'www.ErnestHebert.com'; also can go to 'www.ErnieHebert.com', and that will redirect to this site
 
 To run locally, cd to darby_ghost/ and run 'npm start'. Open the local URL in your browser.
+	
+	If you experience a problem, it might be solved by running "npm install sqlite3 --build-from-source".
 
 This is a companion website by the DALI Lab created for author Ernest Hebert's series of novels, 'The Darby Chronicles'. Here, visitors can play with an interactive map to learn more about the world Ernest has created and peruse the novels, as well as read essays, poems, and blog posts that Ernest plans to add on a regular basis.
 
@@ -18,3 +20,5 @@ To update the live site:
 4) Go to "General" and click on "Change Theme".
 5) Drag in your zipped theme file from step 1 and click "Save All Blog Settings". It might take a while to load.
 6) Verify that Ernie's content was not wiped. If it was, go to "Labs" and "Import" the content you exported earlier. 
+
+See darby/WebsiteGuide_final.pdf for instructions on how Ernies should update his content.

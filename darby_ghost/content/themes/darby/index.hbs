@@ -1,3 +1,5 @@
+{{! This file contains the main code for the home page of the site: introduction, books, map, gallery }}
+
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
@@ -45,6 +47,7 @@
       </div>
     </section>
 
+    {{! books section. uses slick slider plugin: http://kenwheeler.github.io/slick/. can click each book and get book summary }}
     <section id = "books">
       <br><br><br>
       <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> BOOKS </span>
@@ -115,20 +118,26 @@
       <br>
     </section>
 
+    {{! clickable map }}
     <section id = "map">
       <br><br><br>
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> MAP </span><br>
+          {{! This text only shows when we are not on a mobile site. (The clickable feature of the map does not work on iOS devices) }}
           <span id="click" class="special_text"> 
-            Click to explore 
+            Click to explore {{! we use span so that we don't get a new line }}
           </span>
+          {{! this text shows regardless of whether we are on mobile or desktop. So, on mobile it will say, "The Town of Darby", and on desktop it will say "Click to Explore the Town of Darby" }}
           <span class="special_text"> 
             The Town of Darby
           </span>
-          <br><br>
+          <br>
           <img src="assets/images/darby-map2.png" alt="" usemap="#Map" />
+          
+          {{! upon clicking a location on the map, a bootstrap modal pops up with the content given in "data-title" and "data-text" for that individual location }}
+
           <map name="Map" id="Map">
 
             <area id="centerDarby" data-title="Center Darby" data-text="There's a story that appears in Darby Doomsday, the video game, that explains the connection between Parade Road and Lafayette Square in Center Darby. <a href='/center-darby/' target='_blank'>Read More</a>" data-toggle="modal" data-target="#master_modal" shape="poly" coords="659,745,638,799,881,793,875,736" />
@@ -195,7 +204,7 @@
       </div>
     </section> <!-- END MAP -->
 
-    <!-- MODAL -->
+    <!-- MODAL - we use one modal for all locations on the map, varying the content using data-* attributes -->
     <div class="modal" id="master_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -206,13 +215,11 @@
           <div class="modal-body">
             ...
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div> -->
         </div>
       </div>
     </div>
 
+   {{! gallery section. uses flickrit (https://flickrit.com/) to display images from Ernie's darby album in his flickr account }}
     <section id = "gallery">
       <br><br><br>
       <span style="font-family: Amatic SC; font-weight: 700; font-size: 75px; color: #5A5245"> GALLERY </span>
@@ -229,13 +236,12 @@
             </div>
           </div>
         <br>
-        <!-- Previous Embed -->
-      <!-- <object width="500" height="375"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F54024312%40N06%2Fsets%2F72157658655714278%2Fshow%2F&page_show_back_url=%2Fphotos%2F54024312%40N06%2Fsets%2F72157658655714278%2F&set_id=72157658655714278&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=237555616"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=237555616" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F54024312%40N06%2Fsets%2F72157658655714278%2Fshow%2F&page_show_back_url=%2Fphotos%2F54024312%40N06%2Fsets%2F72157658655714278%2F&set_id=72157658655714278&jump_to=" width="500" height="375"></embed></object> -->
-      
-      <!-- New Embed -->
+     
       <!-- From https://flickrit.com/index.php -->
+      <!-- version for desktop - larger in size - this is hidden on mobile-->
       <iframe id='largeGallery' src='//flickrit.com/slideshowholder.php?height=375&width=500&size=medium&count=100&setId=72157658655714278&caption=on&credit=1&trans=1&theme=1&thumbnails=1&transition=0&layoutType=fixed&sort=0' scrolling='no' frameborder='0' width='475' height='385'></iframe>
 
+      <!-- version for mobile - smaller in size so that it doesn't get cut off - this is hidden on desktop-->
       <iframe id='smallGallery' src='//flickrit.com/slideshowholder.php?height=375&width=500&size=medium&count=100&setId=72157658655714278&caption=on&credit=1&trans=1&theme=1&thumbnails=1&transition=0&layoutType=fixed&sort=0' scrolling='no' frameborder='0' width='300' height='385'></iframe>
 
       <br><br>
@@ -252,8 +258,6 @@
 
     <section id = "bottom">
       <a href="#about" style="font-family: Amatic SC; font-weight: 700; font-size: 50px; color: #5A5245">BACK TO TOP</a><br><br>
-    </section>
-
-    
+    </section> 
 
 </main>

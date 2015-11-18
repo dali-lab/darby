@@ -6,7 +6,7 @@ html, body {
     overflow-x: hidden;
     background-color: #FAEBBC;
     text-align: center;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; /* this makes scrolling smooth on mobile. it's sticky otherwise */
 }
 
 body {
@@ -34,6 +34,7 @@ ul li img:hover{
     -webkit-filter: none;
 }
 
+/* tagline beneath each book */
 .book_cap {
     max-width: 200px;
     font-family: Garamond; 
@@ -127,6 +128,7 @@ a:hover {
     text-align: center;
 }
 
+/* used in various places, for example in the "Click to Explore the Town of Darby" in the map section */
 .special_text {
     text-align: center;
     font-size: 30px;
@@ -157,19 +159,21 @@ a:hover {
     background-image: url("../images/navbar.gif");
 }
 
-#bottom {
-    text-align: center;
-    font-size: 30px;
-    font-family: "Amatic SC";
-    color: #5A5245;
-    background-color: #D1D8A5;
-}
-
+/* DALI attribution */
 #dali {
     text-align: center;
     font-size: 15px;
     font-family: "Amatic SC";
     color: black;
+    background-color: #D1D8A5;
+}
+
+/* back to top section */
+#bottom {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Amatic SC";
+    color: #5A5245;
     background-color: #D1D8A5;
 }
 
@@ -473,6 +477,32 @@ img[usemap] {
     color: #dd4b39;
 }
 
+.page-description {
+    font-family: Garamond;
+    font-size: 18px;
+    color: #262120;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 77%;
+}
+
+.page-description a {
+    color: brown;
+}
+
+.tag-posts {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-family: Garamond;
+}
+
+.tag-posts a{
+    color: brown;
+}
+
 /* ==========================================================================
   Slider/Carousel for Books
    ========================================================================== */
@@ -600,32 +630,8 @@ img[usemap] {
 .slick-arrow.slick-hidden {
     display: none;
 }
+/* end slick slider section */
 
-.page-description {
-    font-family: Garamond;
-    font-size: 18px;
-    color: #262120;
-    text-align: left;
-    margin-right: auto;
-    margin-left: auto;
-    width: 77%;
-}
-
-.page-description a {
-    color: brown;
-}
-
-.tag-posts {
-    text-align: left;
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-    font-family: Garamond;
-}
-
-.tag-posts a{
-    color: brown;
-}
 
 /** For hiding or showing elements based on screen size **/
 

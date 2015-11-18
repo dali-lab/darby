@@ -1,0 +1,661 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #FAEBBC;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    padding-top: 65px;
+}
+
+/* GALLERY */
+ul {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+ul li {
+    list-style:none;
+    margin-bottom:25px;
+}
+
+ul li img {
+    cursor: pointer;
+    width: 100%;
+    -webkit-filter: grayscale(50%);
+}
+
+ul li img:hover{
+    -webkit-filter: none;
+}
+
+.book_cap {
+    max-width: 200px;
+    font-family: Garamond; 
+    font-size: 18px; 
+    font-style: italic;
+    color: #262120;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}​
+
+area { 
+    cursor: tooltip;
+}
+
+a:hover { 
+	color: #FFFFFF;
+}
+
+.covers {
+    display: inline-block;
+    padding: 2%;
+}
+
+.header-img { 
+	width: 100vw;
+	height: 60px;
+	background-image: url("{{images "navbar.gif"}}");
+}
+
+.row {
+    font-family: Garamond;
+    color: black;
+}
+
+.row a {
+    color: brown;
+}
+
+/* ====================================================
+    SECTIONS
+   ================================================= */
+
+#about {
+    background-color: #FAEBBC;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.about_text {
+    text-align: left;
+}
+
+#books { 
+    background-color: #D2C5AA;
+    text-align: center;
+}
+
+#map { 
+    background-color: #F7F0DC;
+    text-align: center;
+}
+
+#gallery {
+    background-color: #D2C5AA;
+    text-align: center;
+}
+
+.gallery_text {
+    text-align: left;
+}
+
+#poetry {
+    background-color: #FAEBBC;
+    text-align: center;
+}
+
+.poetry_text {
+    text-align: left;
+}
+
+#essays {
+    background-color: #F7F0DC;
+    text-align: center;
+}
+
+.special_text {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Amatic SC";
+    color: #810000;
+}
+
+.page-title {
+    font-family: Amatic SC;
+    font-weight: 700;
+    font-size: 75px;
+    color: #5A5245;
+}
+
+#blog {
+    background-color: #F7EDBF;
+}
+
+.blog-posts {
+    text-align: left;
+}
+.page_footer {
+    position: absolute;
+    bottom: 0;
+    width: 110%;
+    height:28px;
+    text-align: center;
+    background-image: url("../images/navbar.gif");
+}
+
+#bottom {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Amatic SC";
+    color: #5A5245;
+    background-color: #D1D8A5;
+}
+
+#dali {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Amatic SC";
+    color: black;
+    background-color: #D1D8A5;
+}
+
+/* ====================================================
+    MODAL
+   ================================================= */
+
+/* Next three blocks (.modal, .modal:before, .modal-dialogue) are from http://codepen.io/dimbslmh/full/mKfCc -- centers modal vertically*/
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content{
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+    background-color: #FAEBBC;
+    font-family: Garamond; 
+    text-align: left;
+    font-size: 15px;
+}
+
+.modal-content a {
+    color: brown;
+}
+
+.modal-title {
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* ====================================================
+    NAVIGATION BAR CSS 
+   ================================================= */
+.navbar a{
+    text-align: left;
+    font-family: 'Amatic SC';
+    color: #EAE4CD;
+    font-size: 42px;
+}
+
+#normalnav {
+    float: none;
+    text-align: center;
+    height: 65px;
+}
+
+#mobilenav {;
+    text-align: left;
+    height: 280px;
+}
+
+#mobilenav a{
+    font-size: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#normalnav li{
+	width: 12%;
+	display: inline-block;
+	float: none;
+}
+
+.navbar-inner{
+	background-image: url("../images/navbar.gif");
+	background-repeat: repeat-x repeat-y;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #EAE4CD;
+	opacity: 1.0;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	color: white;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-family: 'Amatic SC';
+	padding-top: 20px;
+	font-size: 42px;
+ 	color: #EAE4CD;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FFFFFF;
+}
+
+.navbar-header {
+    text-align: left;
+    padding-left: 15px;
+}
+
+img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 77%;
+	width: auto;
+}
+
+#map-container{
+	width: 900px; margin: auto;
+}
+
+.map-clickable{
+	position: absolute;
+	/* background-color: black; */
+	border: 1px solid black;
+}
+
+/* ==========================================================================
+   5. Single Post - When you click on an individual post
+   ========================================================================== */
+
+.post-template .post-header {
+   margin-bottom: 3.4rem;
+   font-family: Garamond;
+   font-size: 16px;
+}
+
+.post-template .post-title {
+    margin-bottom: 0;
+    font-family: Amatic SC;
+    font-weight: 700;
+    font-size: 40px;
+    color: #5A5245;
+}
+
+.post-template .post-meta {
+    margin: 0;
+}
+
+.post-template .post-date {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* Stop elements, such as img wider than the post content, from
+   creating horizontal scroll - slight hack due to imperfections
+   with browser width % calculations and rounding */
+.post-template .content {
+    overflow: hidden;
+}
+
+/* Tweak the .post wrapper style */
+.post-template .post {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Kill that stylish little circle that was on the border, too */
+.post-template .post:after {
+    display: none;
+}
+
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
+.post-content img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
+}
+
+.post-content {
+    font-family: Garamond;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.footnotes {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+
+.footnotes li {
+    margin: 0.6rem 0;
+}
+
+.footnotes p {
+    margin: 0;
+}
+
+.footnotes p a:last-child {
+    text-decoration: none;
+}
+
+
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    margin: 6rem 0 0 0;
+    padding: 6rem 0 0 0;
+    border-top: #EBF2F6 1px solid;
+}
+
+.post-footer h4 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.post-footer p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+}
+
+/* list of author links - location / url */
+.author-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+}
+
+.author-meta a {
+    color: #9EABB3;
+}
+.author-meta a:hover {
+    color: #111;
+}
+
+/* Create some space to the right for the share links */
+.post-footer .author {
+    margin-right: 180px;
+}
+
+.post-footer h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+.post-footer .share {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 140px;
+}
+
+.post-footer .share a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 1.6rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.post-footer .share .icon-twitter:hover {
+    color: #55acee;
+}
+.post-footer .share .icon-facebook:hover {
+    color: #3b5998;
+}
+.post-footer .share .icon-google-plus:hover {
+    color: #dd4b39;
+}
+
+/* ==========================================================================
+  Slider/Carousel for Books
+   ========================================================================== */
+/* Slider */
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+    margin: 35px 35px 50px 35px; 
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+    margin-right: 50px;
+
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.page-description {
+    font-family: Garamond;
+    font-size: 18px;
+    color: #262120;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 77%;
+}
+
+.page-description a {
+    color: brown;
+}
+
+.tag-posts {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-family: Garamond;
+}
+
+.tag-posts a{
+    color: brown;
+}
+
+/** For hiding or showing elements based on screen size **/
+
+/** iPhone - do not display "Click to Explore" **/
+@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
+    #click { display: none; } 
+}
+
+/** iPad - do not display "Click to Explore" **/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  { 
+    #click { display: none;}
+}
+
+/** iPhone - do not display largeGallery version **/
+@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
+    #largeGallery { display: none; } 
+}
+
+/** bigger than iPhone - do not display smallGallery version **/
+@media only screen and (min-device-width: 401px) {
+    #smallGallery { display: none; } 
+}
+
+/** iPhone - do not display bottom wood bar **/
+@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
+    #bottom_wood_bar { display: none; } 
+}
+
+/** iPad - do not display bottom wood bar **/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  { 
+    #bottom_wood_bar { display: none;}
+}
+
